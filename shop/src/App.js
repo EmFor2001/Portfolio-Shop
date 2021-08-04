@@ -1,5 +1,4 @@
-import React, {useState} from 'react';
-import { Counter } from './features/counter/Counter';
+import React from 'react';
 import './App.css';
 import { ProductsList } from './components/ProductsList';
 
