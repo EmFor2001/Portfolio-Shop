@@ -1,21 +1,16 @@
 import React from 'react';
-import './App.css';
-import { ProductsList } from './components/ProductsList';
+import Home from './components/Home';
+import Navbar from './components/navbar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<Counter />*/}
-        <p>I will build a great shop </p>
+        <Navbar />
       </header>
-      <div className="menu">
-        <button>Home</button>
-        <button>Products</button>
-        <button>Contact</button>
-      </div>
-      <div className="productList">
-        <ProductsList />
+
+      <div className="Content">
+        <Home/>
       </div>
     </div>
   );
