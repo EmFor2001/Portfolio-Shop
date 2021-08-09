@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './components/Home';
-import Navbar from './components/navbar';
+import Navbar from './components/Navbar';
+import ProductList from './components/PoductList';
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       </header>
 
       <div className="Content">
-        <Home/>
+        <Home />
+        <ProductList />
       </div>
     </div>
   );
