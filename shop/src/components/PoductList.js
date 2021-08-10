@@ -16,7 +16,7 @@ const ProductList = () => {
     
     return ( 
         <div className="productList">
-            
+            Here will be some products!!!
         </div>
     );
 }
