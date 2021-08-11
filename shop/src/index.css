@@ -10,7 +10,7 @@
   padding: 20px;
   display: flex;
   align-items: center;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -34,4 +34,15 @@
   max-width: 80%;
   margin: 40px auto;
   padding: 20px;
+}
+
+.Footer {
+  font-weight: 500;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+  border-top: 1px solid #f2f2f2;
 }

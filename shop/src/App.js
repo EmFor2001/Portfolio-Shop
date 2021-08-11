@@ -1,7 +1,8 @@
 import React from 'react';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import ProductList from './components/PoductList';
+import ProductList from './components/ProductList';
 
 function App() {
   return (
@@ -13,7 +14,11 @@ function App() {
       <div className="Content">
         <Home />
         <ProductList />
+
       </div>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
