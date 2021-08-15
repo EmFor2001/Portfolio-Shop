@@ -3,13 +3,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
-import ProductList from './components/ProductList';
+import Products from './components/Products';
 import Cart from './components/ShoppingCart';
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 function App() {
@@ -25,7 +24,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/Products">
-            <ProductList />
+            <Products />
           </Route>
           <Route path="/Contact">
             <Contact />

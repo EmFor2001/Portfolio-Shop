@@ -1,22 +1,16 @@
-import { useEffect, useState } from "react";
+const ProductList = (props) => {
+    const products = props.products;
 
-const ProductList = () => {
-    const [products, setProducts] = useState (null);
-
-    useEffect (() => {
-        fetch('http://localhost:8000/products')
-            .then(res => {
-                return res.json();
-            })
-            .then(data => {
-                setProducts(data);
-                console.log(data);
-            })
-    }, []);
-    
     return ( 
-        <div className="productList">
-            Here will be some products!!!
+        <div className="ProductList">
+                        {products.map((product) => (
+                <div className="Product-Preview" key={product.id}>
+                    <h2>{ product.title }</h2>
+                    <p>{ product.description }</p>
+                    <div>{ product.price }</div>
+                    <img src={product.image} alt="brak zdjęcia" width="30%" height="30%"/>
+                </div>
+            ))}
         </div>
     );
 }
