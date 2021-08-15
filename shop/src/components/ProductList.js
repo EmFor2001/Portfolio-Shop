@@ -8,7 +8,7 @@ const ProductList = (props) => {
                     <h2>{ product.title }</h2>
                     <p>{ product.description }</p>
                     <div>{ product.price }</div><br />
-                    <img src={product.image} alt="brak zdjęcia" width="" height="30%"/>
+                    <img src={product.image} alt="brak zdjęcia" width="40%" height="30%"/>
                 </div>
             ))}
         </div>
