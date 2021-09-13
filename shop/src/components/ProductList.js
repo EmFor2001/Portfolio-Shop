@@ -1,14 +1,14 @@
 const ProductList = (props) => {
     const products = props.products;
+    
 
     return ( 
-        <div className="ProductList">
+        <div href="/${product.id}" className="ProductList">
                         {products.map((product) => (
-                <div className="Product-Preview" key={product.id}>
+                <div className="Product-Preview" key={product.id} style={{backgroundImage: `url(${product.image})`}}>
                     <h2>{ product.title }</h2>
                     <p>{ product.description }</p>
                     <div>{ product.price }</div><br />
-                    <img src={product.image} alt="brak zdjęcia" width="40%" height="30%"/>
                 </div>
             ))}
         </div>

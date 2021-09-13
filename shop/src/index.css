@@ -84,9 +84,50 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .ProductList p {
-  width: 500px;
+  width: 300px;
+  margin: 15px;
+}
+
+.ProductList .Product-Preview {
+  border: #818181 solid 0.5px;
+  border-radius: 30px;
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  margin: 10px;
+  width: auto;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+}
+
+.ProductList .Product-Preview h2 {
+  margin: 5px;
+}
+
+.ProductList .Product-Preview div {
+  color: black;
+  font-weight: 600;
+}
+
+.ProductList .Product-Preview:hover {
+  -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.6);
+          box-shadow: 5px 5px 24px 0px rgba(0, 0, 0, 0.6);
 }
 /*# sourceMappingURL=index.css.map */
