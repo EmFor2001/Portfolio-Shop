@@ -99,11 +99,11 @@
 .ProductList .Product-Preview {
   border: #818181 solid 0.5px;
   border-radius: 30px;
-  background-size: cover;
-  background-repeat: none;
-  background-position: center;
+  overflow: hidden;
+  position: relative;
   margin: 10px;
   width: auto;
+  height: auto;
   text-align: center;
   -webkit-transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
   transition: -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
@@ -111,13 +111,21 @@
   transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out, -webkit-box-shadow 0.5s ease-in-out;
 }
 
-.ProductList .Product-Preview h2 {
-  margin: 5px;
+.ProductList .Product-Preview .backdrop {
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
 }
 
-.ProductList .Product-Preview div {
-  color: black;
-  font-weight: 600;
+.ProductList .Product-Preview h2 {
+  margin: 5px;
 }
 
 .ProductList .Product-Preview:hover {
