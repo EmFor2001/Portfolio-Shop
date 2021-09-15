@@ -63,7 +63,7 @@
     flex-wrap: wrap;
     justify-content: center;
     & p{
-        width: 300px;
+        width: auto;
         margin: 15px;
     }
     & .Product-Preview{
@@ -72,8 +72,8 @@
         overflow: hidden;
         position:relative;
         margin: 10px;
-        width: auto;
-        height: auto;
+        width: 300px;
+        height: 400px;
         
         text-align: center;
         transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
@@ -87,7 +87,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            opacity: 0.6;
+            opacity: 0.55;
             z-index:-1;
         }
         & h2 {
@@ -99,5 +99,6 @@
         transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
         transform-style: preserve-3d;
         box-shadow: 5px 5px 24px 0px rgba(0,0,0,0.6);
+        transform: translate(-1px, -1px);
     }
 }
