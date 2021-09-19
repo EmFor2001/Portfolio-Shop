@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
-$red: rgb(155, 11, 1);
+$green-theme: rgb(27, 155, 1);
+$text-color: rgb(49, 49, 49);
 
 *{
     margin: 0px;
@@ -17,7 +18,7 @@ $red: rgb(155, 11, 1);
     border-bottom: 1px solid #f2f2f2;
 }
 .Badge{
-    background-color: $red;
+    background-color: $green-theme;
     border-radius: 10px;
     color: white;
     display: inline-block;
@@ -72,16 +73,13 @@ $red: rgb(155, 11, 1);
     margin-right: 20%;
 }
 .ProductList{
-    color: red;
+    color: $green-theme;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    & p{
-        width: auto;
-        margin: 15px;
-    }
-    & .Product-Preview{
+    
+    .Product-Preview{
         border:rgb(129, 129, 129) solid 0.5px;
         border-radius: 30px;
         overflow: hidden;
@@ -92,6 +90,14 @@ $red: rgb(155, 11, 1);
         text-align: center;
         transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
         
+        p{
+            width: auto;
+            margin: 15px;
+            color: $text-color;
+            font-weight: 500;
+            
+        }
+
         .backdrop {
             background-size: cover;
             background-repeat: none;
@@ -101,18 +107,48 @@ $red: rgb(155, 11, 1);
             left: 0;
             right: 0;
             bottom: 0;
-            opacity: 0.55;
+            opacity: 0.5;
             z-index:-1;
         }
-        & h2 {
+
+        h2 {
         margin: 5px;
         }
-        
+
+        button {
+            box-sizing: border-box;
+            appearance: none;
+            background-color: transparent;
+            border: 2px solid $green-theme;
+            border-radius: 0.6em;
+            color: $text-color;
+            cursor: pointer;
+            align-self: center;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1;
+            margin: 8px;
+            padding: 0.8em 1.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            border-color: $green-theme;
+            opacity: 0.95;
+            box-shadow: 0 0 40px 40px $green-theme inset, 0 0 0 0 $green-theme;
+            transition: all 150ms ease-in-out;
+
+            &:hover {
+                box-shadow: 0 0 10px 0 $green-theme inset, 0 0 10px 4px $green-theme;
+            }
+        }
     }
-    & .Product-Preview:hover{
+
+    .Product-Preview:hover{
         transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
         transform-style: preserve-3d;
         box-shadow: 5px 5px 24px 0px rgba(0,0,0,0.6);
         transform: translate(-1px, -1px);
     }
+    
 }
+
