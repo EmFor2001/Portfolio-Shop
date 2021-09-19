@@ -4,21 +4,21 @@
             "id": 1,
             "title": "Product 1",
             "price": "100$",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet aliquam est. Sed egestas mollis libero ut placerat. Pellentesque vehicula eros dignissim erat sodales, id finibus urna rhoncus. Quisque bibendum lacus vitae tortor tempus euismod. Integer scelerisque magna id eros dapibus ullamcorper. Etiam tristique enim et faucibus pulvinar. Proin est ex, fermentum ac lorem vel, porttitor rhoncus nunc. Pellentesque risus enim, dapibus et fringilla at, interdum lacinia sapien. Praesent rhoncus nisl sed accumsan placerat.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "image": "../img/img1.jpg"
         },
         {
             "id": 2,
             "title": "Product 2",
             "price": "200$",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet aliquam est. Sed egestas mollis libero ut placerat. Pellentesque vehicula eros dignissim erat sodales, id finibus urna rhoncus. Quisque bibendum lacus vitae tortor tempus euismod. Integer scelerisque magna id eros dapibus ullamcorper. Etiam tristique enim et faucibus pulvinar. Proin est ex, fermentum ac lorem vel, porttitor rhoncus nunc. Pellentesque risus enim, dapibus et fringilla at, interdum lacinia sapien. Praesent rhoncus nisl sed accumsan placerat.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "image": "../img/img2.jpg"
         },
         {
             "id": 3,
             "title": "Product 3",
             "price": "300$",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet aliquam est. Sed egestas mollis libero ut placerat. Pellentesque vehicula eros dignissim erat sodales, id finibus urna rhoncus. Quisque bibendum lacus vitae tortor tempus euismod. Integer scelerisque magna id eros dapibus ullamcorper. Etiam tristique enim et faucibus pulvinar. Proin est ex, fermentum ac lorem vel, porttitor rhoncus nunc. Pellentesque risus enim, dapibus et fringilla at, interdum lacinia sapien. Praesent rhoncus nisl sed accumsan placerat.",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
             "image": "../img/img3.jpg"
         }
     ]
