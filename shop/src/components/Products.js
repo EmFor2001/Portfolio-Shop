@@ -16,7 +16,7 @@ const Products = () => {
     
     return ( 
         <div className="ProductList">
-            {products && <ProductList products={products}/>}
+            {products && <ProductList products={products} />}
         </div>
     );
 }

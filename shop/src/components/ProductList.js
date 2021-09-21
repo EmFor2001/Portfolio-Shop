@@ -1,8 +1,7 @@
 import Card from "./Card";
 
-const ProductList = (props) => {
+const ProductList = (props , ) => {
     const products = props.products;
-
 
     return ( 
         <div className="ProductList" >
