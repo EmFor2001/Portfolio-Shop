@@ -4,7 +4,7 @@ import { CounterContext } from "../App";
 
 const Card= ({ product }) => {
     const [showDescription, setShowDescription] = useState(false);
-    const ChangeCounter = useContext(CounterContext);
+    const {Counter, ChangeCounter} = useContext(CounterContext);
 
     return (
         <div className="Product-Preview" >
@@ -13,7 +13,7 @@ const Card= ({ product }) => {
             <div>{product.price}</div>
             <button className="ShowDescription" onClick={() => setShowDescription(!showDescription)}>Details</button>
             <button className="AddToCart" onClick={() => ChangeCounter()}>Add To Cart </button> 
-            {showDescription && <p>{product.description}</p>}
+            {showDescription && <p className="Description">{product.description}</p>}
             <br />
         </div>
     );

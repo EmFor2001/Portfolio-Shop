@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -18,13 +18,20 @@ export const CounterContext = React.createContext()
 function App() {
 
   const [Counter, setCounter] = useState(0)
+  useEffect(() => {
+    setCounter(JSON.parse(window.sessionStorage.getItem('count')));
+  }, []);
+
+  useEffect(() => {
+    window.sessionStorage.setItem('count', Counter);
+  }, [Counter]);
+
   function ChangeCounter() {
     setCounter(Counter+1);
   }
-  console.log(Counter);
 
   return (
-    <CounterContext.Provider value={ChangeCounter}>
+    <CounterContext.Provider value={{Counter, ChangeCounter}}>
     <Router>
     <div className="App">
       <header className="App-header">
